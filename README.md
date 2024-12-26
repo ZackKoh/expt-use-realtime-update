@@ -9,6 +9,14 @@ This is the intended way the hook is supposed to work:
 - It should be able to pick an update, and append it correctly to the list of values already present
 - If an API call is triggered, it should show the latest values first, and then continue to update while the update is ongoing
 
+# FAQS
+
+Q: Would this hook solve my original problem?
+
+A: Perhaps.
+
+After writing the hook, I found an additional issue, where the update object being passed was always a new object, and hence breaking references. This hook may still help
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
