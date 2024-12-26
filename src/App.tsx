@@ -22,6 +22,9 @@ function App() {
   return (
     <>
       <div>
+        <button onClick={() => setData(fakeAPICall(Date.now(), 30))}>
+          Call API again
+        </button>
         <p>
           Current Temperature is {update?.temperature} at {update?.timestamp}
         </p>
